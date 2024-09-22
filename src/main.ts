@@ -21,6 +21,7 @@ async function bootstrap() {
       forbidNonWhitelisted: true,
     }),
   );
+  await app.listen();
   // await app.listen(env.PORT);
   // logger.log(`Micro Service <Products> is working on port: ${env.PORT}`);
   logger.log(`Products Micro Service <Products> running on port: ${env.PORT}`);
